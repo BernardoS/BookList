@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CRUD.Models.Book>
+
+@{
+    ViewBag.Title = "Home";
+}
+<div class="book-catalog">
+    <h1 class="book-catalog-headline">Your Catalog</h1>
+
+
+
+
+    @foreach (var item in Model)
+    {
+<div class="book">
+        <a href='@Url.Action("Details", "Book", new { id = item.Id })'>
+            <img src="~/Content/Icons/book-icon.png" class="book-icon" />
+        </a>
+        <div class="book-name">
+            <h1>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </h1>
+            <h2>
+                @Html.DisplayFor(modelItem => item.Autor)
+            </h2>
+        </div>
+        <div class="book-price">
+            <h3>Price</h3>
+            <h3>
+                R$  @Html.DisplayFor(modelItem => item.Preco)
+            </h3>
+        </div>
+        <div class="book-config">
+            <a href='@Url.Action("Edit", "Book", new { id = item.Id })'>
+               <img src="~/Content/Icons/edit-icon.png" class="config-icon" />
+            </a>
+            <a href='@Url.Action("Delete", "Book", new { id = item.Id })'>
+               <img src="~/Content/Icons/delete-icon-alt.png" class="config-icon" />
+            </a>
+
+</div>
+        </div>
+    }
+<div class="add-book-button">
+        <a class="add-link" href='@Url.Action("Create", "Book")'>
+            Add Book
+        </a>
+</div>
+    
+
+
+</div>
+
+

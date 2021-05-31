@@ -1,0 +1,48 @@
+﻿@model CRUD.Models.Book
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+
+<div class="book-catalog">
+    <h2 class="book-catalog-headline">Are you sure you want to delete this?</h2>
+
+    <div class="book-details">
+        <div class="book-name-detail">
+            <h1>
+                @Html.DisplayFor(model => model.Titulo)
+            </h1>
+
+            <h2>
+                Author:  @Html.DisplayFor(model => model.Autor)
+            </h2>
+        </div>
+        <div class="book-price-detail">
+            <h2>
+                Price
+            </h2>
+            <h2>
+                @Html.DisplayFor(model => model.Preco)
+            </h2>
+        </div>
+    </div>
+    <div class="book-link-container">
+        <h3>
+            Link: <a href="@Html.DisplayFor(model => model.Link)">@Html.DisplayFor(model => model.Titulo)</a>
+        </h3>
+    </div>
+    
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="book-details-footer">
+            <input type="submit" value="Delete" class="add-link add-book-button" />
+        </div>
+    }
+</div>
+

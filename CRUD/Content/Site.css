@@ -1,0 +1,154 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #E67600;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.header-image{
+    width:700px;
+}
+.site-header{
+    display:flex;
+    justify-content:center;
+}
+.site-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.book-catalog {
+    background-color: #FF9E29;
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:30px;
+}
+.book-catalog-headline {
+    color: #432C31;
+    font-weight:700;
+    font-size:48px;
+    margin-bottom:80px;
+}
+.book{
+   display:flex;
+   flex-direction:row;
+   align-items:center;
+   width:90%;
+   justify-content:space-between;
+}
+.book-name {
+    color: #51475D;
+    font-weight:700;
+    width:50%;
+}
+.book-name h1{
+    font-size: 36px;
+}
+.book-name h2{
+    margin-top:-10px;
+    font-size:24px;
+}
+.book-icon{
+    height:40px;
+}
+.config-icon{
+    height:40px;
+    margin-left:20px;
+}
+.book-price {
+    color: #51475D;
+}
+.add-book-button {
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 5px 50px;
+    background-color: #EF8300;
+    margin-bottom: 50px;
+    border:0px;
+}
+.add-book-button:hover{
+    background-color:#E48C20;
+}
+.add-link {
+    font-size:48px;
+    color: #322A3C;
+    text-decoration: none;
+}
+.add-link:active{
+    color: #322A3C;
+    text-decoration:none;
+}
+.add-link:hover{
+    color: #51475D;
+    text-decoration:none;
+}
+.book-link-container{
+    flex-wrap:wrap;
+    width:80%;
+}
+.book-link-container h3{
+    font-size:20px;
+}
+
+.book-link-container h3 a{
+     color: #51475D;
+    text-decoration:none;
+}
+.book-link-container h3 a:active {
+        color: #51475D;
+        text-decoration: none;
+}
+.book-link-container h3 a:hover {
+        color: #51475D;
+        text-decoration: none;
+}
+.book-details {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-name-detail h1{
+    font-size:48px;
+}
+.book-name-detail h2{
+    font-size: 36px;
+}
+.book-details-footer{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    width:80%;
+}
+.book-form{
+    margin-bottom:30px;
+}
+.book-form-container{
+    width:100%;
+}

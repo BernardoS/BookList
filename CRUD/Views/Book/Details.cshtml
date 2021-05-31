@@ -1,0 +1,47 @@
+﻿@model CRUD.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="book-catalog">
+    <h2 class="book-catalog-headline">Book</h2>
+
+    <div class="book-details">
+        <div class="book-name-detail">
+            <h1>
+                @Html.DisplayFor(model => model.Titulo)
+            </h1>
+
+            <h2>
+                Author:  @Html.DisplayFor(model => model.Autor)
+            </h2>
+        </div>
+        <div class="book-price-detail">
+            <h2>
+                Price
+            </h2>
+            <h2>
+                @Html.DisplayFor(model => model.Preco)
+            </h2>
+        </div>
+    </div>
+    <div class="book-link-container">
+        <h3>
+            Link: <a href="@Html.DisplayFor(model => model.Link)">@Html.DisplayFor(model => model.Titulo)</a>
+        </h3>
+    </div>
+    <div class="book-details-footer">
+        <a href='@Url.Action("Edit", "Book", new { id = Model.Id })'>
+            <img src="~/Content/Icons/edit-icon.png" class="config-icon" />
+        </a>
+        <div class="add-book-button">
+            <a class="add-link" href='@Url.Action("Index", "Book")'>
+                Back
+            </a>
+        </div>
+        <a href='@Url.Action("Delete", "Book", new { id = Model.Id })'>
+            <img src="~/Content/Icons/delete-icon-alt.png" class="config-icon" />
+        </a>
+    </div>
+</div>
