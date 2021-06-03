@@ -1,0 +1,89 @@
+#book-card {
+  background-color: #FF9E29;
+  width: 80%;
+  margin:auto;
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 5px;
+}
+
+#book-card strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#book-card p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+
+#book-card a {
+  text-decoration: none;
+}
+.book-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.book-info{
+  width: 85%;
+  padding:0 10px;
+}
+.book-price{
+  width: 25%;
+  padding-right: 10px;
+}
+.book-price h3{ 
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:#51475D;
+}
+.book-info h1{
+  font-size: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:#51475D;
+}
+.book-info h2{
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:#51475D;
+  margin-top: -5px;
+}
+.footer-image{
+  height: 20px;
+}
+.book-footer{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.title-text{
+  color:#432C31;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+ion-header{
+  ion-toolbar{
+    --min-height:100px;
+    ion-title{
+      align-items: flex-end;
+      img{
+        width: 300px;
+        vertical-align:middle;
+        margin-top: 15px;
+      }
+    }
+  }
+}

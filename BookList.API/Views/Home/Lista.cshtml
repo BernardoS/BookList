@@ -1,0 +1,12 @@
+﻿@model IEnumerable<BookList.API.Repository.Book>
+@{
+    ViewBag.Title = "Lista";
+}
+
+<h2>Lista</h2>
+<hr />
+@foreach (var book in Model)
+{
+    <h3>@book.Titulo</h3>
+}
+
