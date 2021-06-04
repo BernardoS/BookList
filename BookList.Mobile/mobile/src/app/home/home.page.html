@@ -8,26 +8,28 @@
 
 <ion-content  color="primary" [fullscreen]="true">
     <ion-title class="title-text ion-text-center">Your Catalog</ion-title>
-  <div id="book-card">
-    <div class="book-content">
-      <div class="book-info">
-        <h1>O Rei do Inverno</h1>
-        <h2>Benard Cornwell</h2>
+  <div *ngFor="let book of books">
+    <div id="book-card">
+      <div class="book-content">
+        <div class="book-info">
+          <h1>{{book.Titulo}}</h1>
+          <h2>{{book.Autor}}</h2>
+        </div>
+        <div class="book-price">
+          <h3>{{book.Preco}}</h3>
+        </div>
       </div>
-      <div class="book-price">
-        <h3>R$:36,50</h3>
+      <div class="book-footer">
+        <ion-button color="light" fill="clear" size="small">
+          <img class="footer-image" src="/assets/delete-icon-alt.png"/>
+        </ion-button>
+        <ion-button color="light" fill="clear" size="small">
+          <img class="footer-image" src="/assets/book-icon.png"/>
+        </ion-button>
+        <ion-button color="light" fill="clear" size="small">
+          <img class="footer-image" src="/assets/edit-icon.png"/>
+        </ion-button>
       </div>
-    </div>
-    <div class="book-footer">
-      <ion-button color="light" fill="clear" size="small">
-        <img class="footer-image" src="/assets/delete-icon-alt.png"/>
-      </ion-button>
-      <ion-button color="light" fill="clear" size="small">
-        <img class="footer-image" src="/assets/book-icon.png"/>
-      </ion-button>
-      <ion-button color="light" fill="clear" size="small">
-        <img class="footer-image" src="/assets/edit-icon.png"/>
-      </ion-button>
     </div>
   </div>
 </ion-content>
