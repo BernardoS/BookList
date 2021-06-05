@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookList.Web", "BookList.Web.csproj", "{F921A2C2-22F5-4B3F-8372-3C234361F91B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookList.API", "..\BookList.API\BookList.API.csproj", "{97A98C9B-9DD9-433A-8225-29FFAD237503}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F921A2C2-22F5-4B3F-8372-3C234361F91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F921A2C2-22F5-4B3F-8372-3C234361F91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F921A2C2-22F5-4B3F-8372-3C234361F91B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97A98C9B-9DD9-433A-8225-29FFAD237503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97A98C9B-9DD9-433A-8225-29FFAD237503}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97A98C9B-9DD9-433A-8225-29FFAD237503}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97A98C9B-9DD9-433A-8225-29FFAD237503}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
